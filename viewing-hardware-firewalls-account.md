@@ -39,6 +39,8 @@ The far right column "Gateway/Firewall" contains details about what firewall pro
 * **Firewall-vlanXXXX.networklayer.com** indicates that there is a Hardware Firewall (Dedicated) or a FortiGate Security Appliance in place. Only one VLAN firewall or Network Gateway can be associated with a VLAN, but a server can be protected on the public VLAN by a VLAN firewall and associated on the private network with a Network Gateway.
 * **GatewayName** indicates the VLAN is associated with that Network Gateway.
 
+3. In the Customer Portal navigation, select **Security > Firewalls > Single VLAN Firewalls**.
+
 ## Individually Protected Servers Details
 {: #individually-protected-servers-details}
 
