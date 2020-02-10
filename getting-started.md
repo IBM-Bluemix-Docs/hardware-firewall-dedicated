@@ -36,4 +36,4 @@ To order a Hardware Firewall (Dedicated), perform the following procedure:
 6. Enter your choice of payment and click **Continue**.
 7. In the next screen, enter promo codes if applicable, read and agree to the Master Service Agreement and click on **Place Order**.
 
-After the Hardware Firewall (Dedicated) is provisioned, you can [configure it](/docs/infrastructure/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-configuring-the-hardware-firewall-dedicated-).
+After the Hardware Firewall (Dedicated) is provisioned, you can [configure it](/docs/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-configuring-the-hardware-firewall-dedicated-).
