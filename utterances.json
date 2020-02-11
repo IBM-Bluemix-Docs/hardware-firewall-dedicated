@@ -24,22 +24,14 @@
       "compare all firewalls",
       "comparison of firewalls"
    ],
-    "is-the-hardware-firewall-compatible-with-ibm-s-load-balancer-products-": [   
+    "is-the-hardware-firewall-dedicated-compatible-with-ibm-s-load-balancer-products-": [   
        "Hardware Firewall compatible with IBM's load balancer",
        "Hardware Firewall compatible with citrix",
        "load balancer and hardware firewall compatible",
        "hardware Firewall and load balancer compatibility",
        "compatability between hardware firewall and load balancers"
    ],
-    "can-portable-ip-s-be-protected-by-the-hardware-firewall-": [   
-      "portable IP’s be protected by the Hardware Firewall",
-      "are portable IPs protected by a firewall",
-      "are firewall protects portable Ips",
-      "hardware firewall protect a portable IP",
-      "hardware firewall provide protection for portable Ips",
-      "firewall protecting portable Ips"
-   ],
-    "can-i-have-a-hardware-firewall-and-a-network-gateway-associated-with-the-same-vlan-": [  
+    "can-i-have-a-dedicated-hardware-firewall-and-a-network-gateway-associated-with-the-same-vlan-": [  
        "Hardware Firewall and a Network Gateway associated with the same VLAN",
        "firewalls and a Network Gateway associated with the same VLAN",
        "same VLAN have a firewall and a network gateway",
@@ -52,14 +44,7 @@
       "public traffic go through hardware firewall first",
       "public internet go first through the hardware firewall",
       "public traffic go through load balancer first and then firewall"
- ],
-    "does-a-server-s-uplink-port-speed-need-to-match-the-hardware-firewall-": [    
-      "server's uplink port speed need to match the Hardware Firewall",
-      "firewall need to match the public uplink speed of the server",
-      "public uplink speed of the server and firewall match",
-      "uplink speed of the firewall and server be the same",
-      "match the server's uplink port speed with the firewall"
- ],
+   ],
     "does-ibm-cloud-charge-for-firewall-bandwidth-": [    
        "IBM charge for firewall bandwidth",
        "pay for the firewall bandwidth",
@@ -67,34 +52,31 @@
        "pay extra for bandwidth for firewalls",
        "firewalls charged for bandwidth",
        "pay for bandwidth for firewall"
- ],
-    "how-do-i-upgrade-the-uplink-of-my-hardware-firewall-": [ 
-       "upgrade the uplink of my Hardware Firewall",
-       "firewall locked to the public uplink port speed of a server",
-       "upgrade the uplink to my Firewall",
-       "upgrading my firewall's uplink port speed",
-       "firewall's uplink port speed upgrade"
- ],
-    "is-high-availability-possible-with-the-hardware-firewall-": [   
+  ],
+    "when-i-select-the-high-availability-option-for-the-hardware-firewall-dedicated-or-the-fortigate-security-appliance-what-steps-do-i-have-to-take-to-leverage-this-feature-": [   
       "High Availability possible with the Hardware Firewall",
-      "HA possible with Hardware Firewall",
-      "high availability and hardware firewall",
-      "HA possiblity with my Firewall",
-      "Firewall can have high availability",
+      "HA enablement with Hardware Firewall",
+      "enable HA for my firewall",  
+      "enable high availability and hardware firewall",
+      "turn on HA for my Firewall",
+      "want Firewall to have high availability",
       "have HA with my firewall"
  ],
-    "i-am-running-a-hypervisor-on-an-ibm-cloud-server-will-the-hardware-firewall-protect-the-virtual-machines-running-on-my-hypervisor-": [ 
-      "Hardware Firewall protect the Virtual Machines running on my hypervisor",
-      "firewall provide protection for VMs",
-      "Hardware Firewall protect the VM running on my hypervisor",
-      "VM running on hypervisor protected by firewall",
-      "hypervisor protected by firewall"
+    "what-is-the-maximum-number-of-servers-that-the-hardware-firewall-dedicated-or-fortigate-security-appliance-will-protect-": [ 
+      "many servers will my firewall protect",
+      "maximum number of servers this firewall protects",
+      "how many servers does Hardware Firewall protect",
+      "number of servers FSA protects",
+      "amount of servers that my firewall protects",  
+      "max number of servers a firewall protects"
 ],
-    "what-are-the-grayed-out-ports-in-my-windows-firewall-": [
+    "what-are-the-greyed-out-ports-in-my-windows-firewall-": [
       "grayed out ports in my Windows Firewall",
       "grayed out in my Windows Firewall",
-      "what do the grayed out ports represent",
+      "greyed out in my Windows Firewall",  
+      "what do the greyed out ports represent",
       "ports grayed out in windows firewall",
+      "ports greyed out in windows firewall",
       "ports that are gray for firewall"
 ],
     "what-hardware-firewall-options-are-available-for-10gbps-servers-": [
