@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="hardware-firewall-dedicated" category="security" audience="network" arm="3662775" href="/docs/hardware-firewall-dedicated?topic=infrastructure/hardware-firewall-dedicated-getting-started-with-hardware-firewall-dedicated" path="hardware-firewall-dedicated"}
+{: .toc subcollection="hardware-firewall-dedicated" category="security" audience="network" arm="3662775" href="/docs/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-getting-started" path="hardware-firewall-dedicated"}
 Hardware Firewall (Dedicated)
 
     {: .navgroup id="learn"}

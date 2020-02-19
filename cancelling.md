@@ -19,9 +19,13 @@ subcollection: hardware-firewall-dedicated
 {:download: .download}
 {:note: .note}
 {:important: .important}
+{:help: data-hd-content-type='help'}
+{:support: data-reuse='support'}
 
 # Canceling a Hardware Firewall (Dedicated)
 {: #canceling-a-hardware-firewall-dedicated-}
+{: help}
+{: support}
 
 Your Hardware Firewall (Dedicated) can be cancelled at any time, by performing the procedure here.
 {: shortdesc}

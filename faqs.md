@@ -20,6 +20,7 @@ subcollection: hardware-firewall-dedicated
 {:important: .important}
 {:download: .download}
 {:faq: data-hd-content-type='faq'}
+{:support: data-reuse='support'}
 
 # FAQs for Hardware Firewall (Dedicated)
 {: #faqs-for-hardware-firewall-dedicated-}
@@ -38,17 +39,23 @@ A firewall is a network device that is connected upstream from a server. The fir
 The primary advantage of having a firewall is that your server only has to handle “good” traffic – this means your resource is solely being used for its intended purpose as opposed to handling unwanted traffic, too.
 
 ## What firewall products does IBM© offer?
+{: #products}
 {: faq}
+{: support}
 
 You can find a detailed comparison of all firewall products offered in the IBM Cloud by reviewing this [topic](/docs/fortigate-10g?topic=fortigate-10g-exploring-firewalls).
 
 ## Is the Hardware Firewall (Dedicated) compatible with IBM's load balancer products?
+{: #compatibility}
 {: faq}
+{: support}
 
 Yes. Hardware Firewall (Dedicated) is compatible with the standard and dedicated load balancers, as well as the Citrix Netscaler VPX and MPX.
 
 ## Can I have a dedicated hardware firewall and a Network Gateway associated with the same VLAN?
+{: #vlan}
 {: faq}
+{: support}
 
 No, it is not possible to have a firewall service (standard or dedicated) and a Network Gateway device assigned to the same VLAN.
 
@@ -58,12 +65,16 @@ No, it is not possible to have a firewall service (standard or dedicated) and a 
 Coming from the public internet in, the Local Load Balancer, Dedicated Load Balancer or Enterprise Load Balancer products are first, the Hardware Firewall products are next, and the NetScaler products are last (along with the customers servers).
 
 ## Does IBM Cloud charge for firewall bandwidth?
+{: #bandwidth}
 {: faq}
+{: support}
 
 The Hardware Firewall, Hardware Firewall (Dedicated), and Fortigate Security Appliance are not metered for bandwidth.  Additionally, these products can reduce total bandwidth utilization by limiting the traffic that servers must respond to.
 
 ## What are the greyed out ports in my Windows Firewall?
+{: #greyed-ports}
 {: faq}
+{: support}
 
 IBM Cloud offers many different services that you can utilize with your server including Evault, SNMP and Nagios monitoring. These services require that our internal systems communicate with your server to some degree. The grayed out ports you see in the Exceptions list are ports open on the internal network port only. They are still blocked on the public (internet) network connection. Since the internal network is a secured network having these ports open is considered secure.
 
@@ -75,17 +86,23 @@ These ports generally cannot be modified however if you reset the firewall rules
 If 10Gbps is only required on the private network (for database, backup, storage, etc), then customers can request a downgrade of only their public uplinks and order any of the Hardware Firewall products. If 10Gbps is required on the public network, a Network Gateway or Fortigate Security Appliance 10Gbps is required.
 
 ## What IP ranges do I allow through the firewall?
+{: #ip-ranges}
 {: faq}
+{: support}
 
 For the list of IP addresses and IP ranges to allow through the firewall, go [here](/docs/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-ibm-cloud-ip-ranges).
 
 ## What is the maximum number of servers that the Hardware Firewall (Dedicated) or Fortigate Security Appliance will protect?
+{: #max-servers}
 {: faq}
+{: support}
 
 Both the Dedicated Hardware Firewall and the Fortigate Security Appliance can protect every server on a Public VLAN.  However it is important to note that since these FW devices are connected with 2Gbps Uplink we recommend scaling the number of firewall instances to meet the performance needs of your app. Customers can simply do so by deploying additional public VLAN Firewalls within a pod to allow for additional firewall and associated compute resources to be added.
 
 ## What VPN options are included with each Firewall product?
+{: #vpn}
 {: faq}
+{: support}
 
 Not all firewalls offer VPN and not all VPN options are the same.  The general options for VPN are:
 
