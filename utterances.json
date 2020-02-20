@@ -15,7 +15,7 @@
       "why buy a firewall",
       "do I need to pay for a firewall"
    ],
-    "what-firewall-products-does-ibm-offer-": [
+    "products": [
       "firewalls does IBM offer",
       "what firewalls are available",
       "what firewalls do you offer",
@@ -24,14 +24,14 @@
       "compare all firewalls",
       "comparison of firewalls"
    ],
-    "is-the-hardware-firewall-dedicated-compatible-with-ibm-s-load-balancer-products-": [   
+    "compatibility": [   
        "Hardware Firewall compatible with IBM's load balancer",
        "Hardware Firewall compatible with citrix",
        "load balancer and hardware firewall compatible",
        "hardware Firewall and load balancer compatibility",
        "compatability between hardware firewall and load balancers"
    ],
-    "can-i-have-a-dedicated-hardware-firewall-and-a-network-gateway-associated-with-the-same-vlan-": [  
+    "vlan": [  
        "Hardware Firewall and a Network Gateway associated with the same VLAN",
        "firewalls and a Network Gateway associated with the same VLAN",
        "same VLAN have a firewall and a network gateway",
@@ -45,7 +45,7 @@
       "public internet go first through the hardware firewall",
       "public traffic go through load balancer first and then firewall"
    ],
-    "does-ibm-cloud-charge-for-firewall-bandwidth-": [    
+    "bandwidth": [    
        "IBM charge for firewall bandwidth",
        "pay for the firewall bandwidth",
        "are firewalls metered for bandwidth",
@@ -54,15 +54,15 @@
        "pay for bandwidth for firewall"
   ],
     "when-i-select-the-high-availability-option-for-the-hardware-firewall-dedicated-or-the-fortigate-security-appliance-what-steps-do-i-have-to-take-to-leverage-this-feature-": [   
-      "High Availability possible with the Hardware Firewall",
-      "HA enablement with Hardware Firewall",
+      "switch on High Availability in Dedicated Firewall",
+      "HA enablement in FSA",
       "enable HA for my firewall",  
       "enable high availability and hardware firewall",
       "turn on HA for my Firewall",
       "want Firewall to have high availability",
       "have HA with my firewall"
  ],
-    "what-is-the-maximum-number-of-servers-that-the-hardware-firewall-dedicated-or-fortigate-security-appliance-will-protect-": [ 
+    "max-servers": [ 
       "many servers will my firewall protect",
       "maximum number of servers this firewall protects",
       "how many servers does Hardware Firewall protect",
@@ -70,8 +70,8 @@
       "amount of servers that my firewall protects",  
       "max number of servers a firewall protects"
 ],
-    "what-are-the-greyed-out-ports-in-my-windows-firewall-": [
-      "grayed out ports in my Windows Firewall",
+    "greyed-ports": [
+      "greyed out ports in my Windows Firewall",
       "grayed out in my Windows Firewall",
       "greyed out in my Windows Firewall",  
       "what do the greyed out ports represent",
@@ -86,14 +86,14 @@
       "firewall option for a 10G server",
       "10G servers, which firewall"
  ],
-    "what-ip-ranges-do-i-allow-through-the-firewall-": [     
+    "ip-ranges": [     
        "IP ranges do I allow through the firewall",
        "list of IP addresses to allow via firewall",
        "list of IP ranges to allow through firewalls",
        "IP range for firewalls",
        "IP address allowed for firewall"
 ],
-    "what-vpn-options-are-included-with-each-firewall-product-": [     
+    "vpn": [     
        "VPN options are included with each Firewall",
        "does the firewall offer VPN",
        "is VPN included with my firewall",
