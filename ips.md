@@ -168,7 +168,7 @@ Ports to allow:
 All TCP/UDP ports
 
 ## Vulnerability Scans
-To ensure successful completion of a Nessus vulnerability scan, please permit access for the following IP addresses: **173.192.255.232**, **172.17.19.38**, and **172.22.211.38**. For scans in federal datacenters, please allow **100.100.1.41** and **100.64.23.41**.
+To ensure successful completion of a Nessus vulnerability scan, please permit access for the following IP addresses: **169.48.118.71**, **173.192.255.232**, **172.17.19.38**, and **172.22.211.38**. For scans in federal datacenters, please allow **100.100.1.41** and **100.64.23.41**.
 
 ## Backend (private) Network
 
