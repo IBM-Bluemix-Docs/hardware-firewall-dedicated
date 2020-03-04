@@ -22,7 +22,7 @@ subcollection: hardware-firewall-dedicated
 {:help: data-hd-content-type='help'}
 {:support: data-reuse='support'}
 
-# Viewing Log Reports
+# Viewing log reports
 {: #viewing-log-reports}
 {: help}
 {: support}

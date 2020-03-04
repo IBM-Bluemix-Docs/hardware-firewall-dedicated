@@ -20,7 +20,7 @@ subcollection: hardware-firewall-dedicated
 {:note: .note}
 {:important: .important}
 
-# IBM Cloud IP Ranges
+# IBM Cloud IP ranges
 {: #ibm-cloud-ip-ranges}
 
 A frequently asked question is **What IP ranges do I allow through the firewall?**. The following list contains the full range of IPs to use with the following IBM© firewalls and appliances.
@@ -89,7 +89,7 @@ Ports to allow:
 All TCP/UDP ports
 ICMP – ping (for support troubleshooting and monitoring)
 
-## Load Balancer IPs
+## Load balancer IPs
 
 |Datacenter|City|State|Country|IP Range|
 |---|---|---|---|---|
@@ -137,7 +137,7 @@ ICMP – ping (for support troubleshooting and monitoring)
 |wdc06|Washington D.C.|-|USA|169.60.117.0/24|
 |wdc07|Washington D.C.|-|USA|169.61.117.0/24|
 
-## DOS Mitigation Systems
+## DOS mitigation systems
 
 |Datacenter|City|State|Country|IP Range|
 |---|---|---|---|---|
@@ -167,17 +167,17 @@ ICMP – ping (for support troubleshooting and monitoring)
 Ports to allow:
 All TCP/UDP ports
 
-## Vulnerability Scans
+## Vulnerability scans
 To ensure successful completion of a Nessus vulnerability scan, please permit access for the following IP addresses: **169.48.118.71**, **173.192.255.232**, **172.17.19.38**, and **172.22.211.38**. For scans in federal datacenters, please allow **100.100.1.41** and **100.64.23.41**.
 
-## Backend (private) Network
+## Backend (private) network
 
 IP block: your private IP block for server to server communications (10.X.X.X/X)
 Ports to allow:
 ICMP – ping (for support troubleshooting)
 All TCP/UDP ports
 
-## Service Network (on backend/private network)
+## Service network (on backend/private network)
 Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the location of your server. If your server is in an EU location, you'll need to add rules allowing traffic from DAL01, DAL10, WDC04, and AMS01 to your server. The traffic must be able to travel between the service networks and your server. By default, all servers and gateway/firewall devices are configured with a static route for the `10.0.0.0/8` network to the Backend Customer Router (BCR). If you change that configuration such that the entire `10.0.0.0/8` network is pointed elsewhere, you must also configure static routes for the service networks to ensure they are pointed to the Backend Customer Router (BCR). Failing to do so will result in the static routes being pointed to whichever IP address you replaced the original with. If you do not change the default static route for `10.0.0.0/8`, then the service networks are already routed correctly.
 
 |Datacenter|City|State|Country|IP Range|
@@ -238,7 +238,7 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 ICMP – ping (for support troubleshooting)
 All TCP/UDP ports (for access from your local workstation)
 
-## SSL VPN Datacenters
+## SSL VPN data centers
 
 |Datacenter|City|State|Country|IP Range|
 |---|---|---|---|---|
@@ -297,7 +297,7 @@ All TCP/UDP ports (for access from your local workstation)
 |mia01|Miami|Florida|USA|10.1.37.0/24|
 |nyc01|New York|New York|USA|10.1.45.0/24|
 
-## Legacy Networks
+## Legacy networks
 
 |IP Range|
 |---|
@@ -313,7 +313,7 @@ All TCP/UDP ports (for access from your local workstation)
 |216.40.193.0/24|
 |216.234.234.0/24|
 
-## Red Hat Enterprise Linux Server Requirements
+## Red Hat Enterprise Linux server requirements
 
 If your server uses a **Red Hat Enterprise Linux (RHEL)** license provided by {{site.data.keyword.cloud_notm}} Infrastructure, you will additionally need to allow access to the service network as follows, otherwise updates and licensing will not function properly:
 

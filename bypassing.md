@@ -20,7 +20,7 @@ subcollection: hardware-firewall-dedicated
 {:note: .note}
 {:important: .important}
 
-# Bypassing Hardware Firewall (Dedicated) Rules
+# Bypassing Hardware Firewall (Dedicated) rules
 {: #bypassing-hardware-firewall-dedicated-rules}
 
 You can bypass the rules of your Hardware Firewall (Dedicated) by following the instructions here.

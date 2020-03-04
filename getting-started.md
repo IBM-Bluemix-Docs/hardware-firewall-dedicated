@@ -20,7 +20,7 @@ subcollection: hardware-firewall-dedicated
 {:note: .note}
 {:important: .important}
 
-# Getting Started with Hardware Firewall Dedicated
+# Getting started with Hardware Firewall Dedicated
 {: #getting-started}
 
 The Hardware Firewall (Dedicated) provides customers with an essential layer of security that is provisioned on demand without service interruptions. It prevents unwanted traffic from hitting your servers, reducing your attack surface, and allowing your server resources to be dedicated for their intended use.  

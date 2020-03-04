@@ -20,7 +20,7 @@ subcollection: hardware-firewall-dedicated
 {:note: .note}
 {:important: .important}
 
-# Known Limitations for Hardware Firewall (Dedicated)
+# Known limitations for Hardware Firewall (Dedicated)
 {: #known-limitations-for-hardware-firewall-dedicated-}
 
 There are some limitations to be aware of when using your Hardware Firewall (Dedicated).
