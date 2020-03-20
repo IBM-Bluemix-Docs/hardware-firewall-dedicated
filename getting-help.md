@@ -31,6 +31,4 @@ When using the forums to ask a question, tag your question so that it is seen by
 * If you have technical questions about the Hardware Firewall (Dedicated), post your question on [Stack Overflow](https://stackoverflow.com/search?q=hardware-firewalls+ibm-cloud) and tag your question with "hardware-firewalls" and "ibm-cloud".
 * For questions about the service and getting started instructions, use the [IBM developerWorks dW Answers](https://developer.ibm.com/answers/topics/hardware-firewalls.html?smartspace=ibm-cloud) forum. Include the "hardware-firewalls" and "ibm-cloud" tags.
 
-See [Getting help](/docs/get-support?topic=get-support-getting-customer-support#asking-a-question) for more details about using the forums.
-
-For information about opening an IBM support case, or about support levels and case severities, see [Contacting support](/docs/get-support?topic=get-support-getting-customer-support).
+For more information about opening an IBM Support case, or about support levels and case severities, see [Contacting support](/docs/get-support?topic=get-support-getting-customer-support).
