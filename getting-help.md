@@ -23,12 +23,7 @@ subcollection: hardware-firewall-dedicated
 # Getting help and support for Hardware Firewall (Dedicated)
 {: #getting-help-and-support-for-hardware-firewall-dedicated-}
 
-If you have problems or questions when using the Hardware Firewall (Dedicated), you can get help by searching for information or by asking questions through one of the forums listed below. You can also open a support case.
-{: shortdesc}
+If you have problems or questions when using the Hardware Firewall (Dedicated), you can search for information or ask questions by using [Stack Overflow](https://stackoverflow.com/search?q=dl+ibm-cloud){: external}. Post your question then and tag it with "hardware-firewalls" and "ibm-cloud".
+{:shortdesc}
 
-When using the forums to ask a question, tag your question so that it is seen by the IBM© Cloud development teams.
-
-* If you have technical questions about the Hardware Firewall (Dedicated), post your question on [Stack Overflow](https://stackoverflow.com/search?q=hardware-firewalls+ibm-cloud) and tag your question with "hardware-firewalls" and "ibm-cloud".
-* For questions about the service and getting started instructions, use the [IBM developerWorks dW Answers](https://developer.ibm.com/answers/topics/hardware-firewalls.html?smartspace=ibm-cloud) forum. Include the "hardware-firewalls" and "ibm-cloud" tags.
-
-For more information about opening an IBM Support case, or about support levels and case severities, see [Contacting support](/docs/get-support?topic=get-support-getting-customer-support).
+You can also open a support case in the [{{site.data.keyword.cloud_notm}} console (https://cloud.ibm.com/unifiedsupport/cases/add){: external}.
