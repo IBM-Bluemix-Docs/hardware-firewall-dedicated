@@ -25,5 +25,3 @@ subcollection: hardware-firewall-dedicated
 
 If you have problems or questions when using the Hardware Firewall (Dedicated), you can search for information or ask questions by using [Stack Overflow](https://stackoverflow.com/search?q=dl+ibm-cloud){: external}. Post your question then and tag it with "hardware-firewalls" and "ibm-cloud".
 {:shortdesc}
-
-You can also open a support case in the [{{site.data.keyword.cloud_notm}} console (https://cloud.ibm.com/unifiedsupport/cases/add){: external}.
