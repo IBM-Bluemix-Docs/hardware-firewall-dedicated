@@ -218,7 +218,7 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 |sjc03|San Jose|California|USA|10.3.176.0/20|
 |sjc04|San Jose|California|USA|10.201.80.0/20|
 |sng01|Jurong East|-|SGP|10.2.32.0/20|
-|syd01|Sydney|-|AUS|10.3.96.0/20|
+|syd01|Sydney|-|AUS|10.3.96.0/20 and 10.202.32.0/20|
 |syd04|Sydney|-|AUS|10.201.16.0/20|
 |syd05|Sydney|-|AUS|10.202.16.0/20|
 |tok02|Tokyo|-|JPN|10.3.64.0/20|
