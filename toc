@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="hardware-firewall-dedicated" category="security" audience="network" arm="3662775" href="/docs/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-getting-started" console-page="/catalog/infrastructure/vlan" product-page="https://www.ibm.com/cloud/blog/introducing-premium-vlans-are-you-compute-first-or-network-first?mhsrc=ibmsearch_a&mhq=Premium%20VLAN" path="hardware-firewall-dedicated"}
+{: .toc subcollection="hardware-firewall-dedicated" category="network_classic" audience="network" arm="3662775" href="/docs/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-getting-started" console-page="/catalog/infrastructure/vlan" product-page="https://www.ibm.com/cloud/blog/introducing-premium-vlans-are-you-compute-first-or-network-first?mhsrc=ibmsearch_a&mhq=Premium%20VLAN" path="hardware-firewall-dedicated"}
 Hardware Firewall (Dedicated)
 
     {: .navgroup id="learn"}
