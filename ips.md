@@ -23,7 +23,7 @@ subcollection: hardware-firewall-dedicated
 # IBM Cloud IP ranges
 {: #ibm-cloud-ip-ranges}
 
-A frequently asked question is **What IP ranges do I allow through the firewall?**. The following list contains the full range of IPs to use with the following IBM© firewalls and appliances.
+A frequently asked question is, **What IP ranges do I allow through the firewall?** The following list contains the full range of IPs to use with the following IBM firewalls and appliances.
 {: shortdesc}
 
 * IBM Cloud Juniper vSRX Standard
@@ -36,7 +36,7 @@ A frequently asked question is **What IP ranges do I allow through the firewall?
 
 ## Frontend (public) network
 
-|Datacenter|City|State|Country|IP Range|
+|Data Center|City|State|Country|IP Range|
 |---|---|---|---|---|
 |ams01|Amsterdam|-|NLD|159.253.158.0/23|
 |ams03|Amsterdam|-|NLD|159.8.198.0/23|
@@ -91,7 +91,7 @@ ICMP – ping (for support troubleshooting and monitoring)
 
 ## Load balancer IPs
 
-|Datacenter|City|State|Country|IP Range|
+|Data Center|City|State|Country|IP Range|
 |---|---|---|---|---|
 |ams01|Amsterdam|-|NLD|159.253.157.0/24|
 |ams03|Amsterdam|-|NLD|159.8.197.0/24|
@@ -139,7 +139,7 @@ ICMP – ping (for support troubleshooting and monitoring)
 
 ## DOS mitigation systems
 
-|Datacenter|City|State|Country|IP Range|
+|Data Center|City|State|Country|IP Range|
 |---|---|---|---|---|
 |AMS|Amsterdam|-|NLD|159.253.156.0/24, 159.8.196.0/24|
 |CHE|Chennai|-|IND|169.38.116.0/24|
@@ -168,7 +168,7 @@ Ports to allow:
 All TCP/UDP ports
 
 ## Vulnerability scans
-To ensure successful completion of a Nessus vulnerability scan, please permit access for the following IP addresses: **169.48.118.71**, **173.192.255.232**, **172.17.19.38**, and **172.22.211.38**. For scans in federal datacenters, please allow **100.100.1.41** and **100.64.23.41**.
+To ensure successful completion of a Nessus vulnerability scan, permit access for the following IP addresses: **169.48.118.71**, **173.192.255.232**, **172.17.19.38**, and **172.22.211.38**. For scans in federal datacenters, please allow **100.100.1.41** and **100.64.23.41**.
 
 ## Backend (private) network
 
@@ -180,7 +180,7 @@ All TCP/UDP ports
 ## Service network (on backend/private network)
 Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the location of your server. If your server is in an EU location, you'll need to add rules allowing traffic from DAL01, DAL10, WDC04, and AMS01 to your server. The traffic must be able to travel between the service networks and your server. By default, all servers and gateway/firewall devices are configured with a static route for the `10.0.0.0/8` network to the Backend Customer Router (BCR). If you change that configuration such that the entire `10.0.0.0/8` network is pointed elsewhere, you must also configure static routes for the service networks to ensure they are pointed to the Backend Customer Router (BCR). Failing to do so will result in the static routes being pointed to whichever IP address you replaced the original with. If you do not change the default static route for `10.0.0.0/8`, then the service networks are already routed correctly.
 
-|Datacenter|City|State|Country|IP Range|
+|Data Center|City|State|Country|IP Range|
 |---|---|---|---|---|
 |All|-|-|-|166.8.0.0/14|
 |All|-|-|-|161.26.0.0/16|
@@ -234,13 +234,249 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 `*` - The 10.1.129.0/24 subnet, within the 10.1.128.0/19 master subnet, is used for Global service virtual IPs, which are not located in dal05.
 {: note}
 
+### Service by data center
+{: #service-by-data-center}
+
+| Data Center | IP Range |
+|:-----|:-----|
+|**Required Flows**:<ul><li>Outbound TCP 8086 and TCP 8087 from your private VLANs<br />to IP ranges documented in DAL09 and DAL10 only. `*`</li><li>Outbound TCP 2546 from your private VLANs to IP ranges<br />documented for each DC where you need to access your vault. `*`</li></ul> | |
+| AMS01 | 10.2.70.0/24<br />10.200.54.0/24 |   
+| AMS03 | 10.3.134.0/24 |  
+| CHE01 | 10.200.22.0/24 |  
+| DAL01 | 10.0.82.0/24 |
+| DAL05 | 10.1.146.0/24 |     
+| DAL06 | 10.2.134.0/24 |   
+| DAL07 | 10.1.182.0/24 |  
+| DAL08 | 100.100.6.0/24 |  
+| DAL09 | 10.2.118.0/24 |
+| DAL09 | 10.2.126.0/24
+| DAL10 | 10.200.86.0/24 |  
+| DAL12 | 10.200.118.0/24 |  
+| DAL13 | 10.200.134.0/24 |  
+| FRA02 | 10.3.86.0/24 |  
+| FRA02AZ | 10.201.150.0/24 |  
+| FRA04 | 10.201.118.0/24 |  
+| FRA05 | 10.201.134.0/24 |
+| HKG02 | 10.2.166.0/24 |  
+| HOU02 | 10.1.166.0/24 |
+| LON02 | 10.1.214.0/24 |
+| LON02AZ | 10.201.102.0/24 |  
+| LON04 | 10.201.38.0/24 |  
+| LON05 | 10.201.54.0/24 |   
+| LON06 | 10.201.70.0/24 |  
+| MEL01 | 10.2.86.0/24 |  
+| MEX01 | 10.2.182.0/24 |   
+| MIL01 | 10.3.150.0/24 |  
+| MON01 | 10.3.118.02/24 |  
+| OSL01 | 10.200.102.0/24 |  
+| PAR01 | 10.2.150.0/24 |  
+| SAO01 | 10.200.6.0/24 |  
+| SEA01 | 10.1.82.0/24 |  
+| SEO01 | 10.200.86.0/24 |  
+| SJC01 | 10.1.198.0/24<br />10.200.38.0/24 |
+| SJC03 | 10.3.182.0/24 |
+| SJC04 | 10.201.86.0/24 |
+| SNG01 | 10.2.38.0/24<br />10.200.150.0/24 |  
+| SYD01 | 10.3.102.0/24 |  
+| SYD04 | 10.201.22.0/24 |  
+| TOK02AZ | 10.201.166.0/24 |  
+| TOK04 | 10.201.182.0/24 |   
+| TOK05 | 10.201.198.0/24 |
+| TOR01 | 10.2.54.0/24 |
+| WDC01 | 10.1.114.0/24 |
+| WDC03 | 100.100.38.0/24 |
+| WDC04 | 10.3.166.0/24<br />10.201.6.0/24 |
+| WDC06 | 10.200.166.0/24 |
+| WDC07 | 10.200.182.0/24 |
+{: class="simple-tab-table"}
+{: caption="Table 1. eVault by Data Center" caption-side="left"}
+{: #simpletabtable1}
+{: tab-title="eVault"}
+{: tab-group="IAM-simple"}
+
+| Data Center | IP Range |
+|:-----|:-----|
+| **Required Flows**:<ul><li>NFS File Storage:</li><ul><li>TCP & UDP 111 (sunrpc)</li><li>TCP & UDP 2049 (nfs)</li><li>TCP & UDP 111(portmapper)</li><li>TCP & UDP 635 (nfsd)</li><li>TCP & UDP 4045-4048</li><li>UDP 4049</li></ul><li>Block Storage:</li><ul><li>TCP & UDP 65200 (iscsi)</li></ul></ul> | |
+| AMS01 | 10.2.78.0/24<br />10.200.62.0/24 |
+| AMS03 | 10.3.142.0/24 |
+| CHE01 | 10.200.30.10/24 |
+| DAL01 | 10.0.90.0/24<br />10.0.95.0/24 |
+| DAL05 | 10.1.154.0/24<br />10.1.159.0/24 |
+| DAL06 | 10.2.142.0/24 |
+| DAL07 | 10.1.190.0/24 |
+| DAL08 | 100.100.14.0/24 |
+| DAL10 | 10.200.94.0/24 |
+| DAL12 | 10.200.126.0/24 |
+| DAL13 | 10.200.142.0/24 |
+| FRA02 | 10.3.94.0/24 |
+| FRA02AZ | 10.201.158.0/24 |
+| FRA04 | 10.201.110.0/24 |
+| FRA05 | 10.201.142.0/24 |
+| HKG02 | 10.2.174.0/24 |
+| HOU02 | 10.1.174.0/24 |
+| LON02 | 10.1.222.0/24 |
+| LON02AZ | 10.201.110.0/24 |
+| LON04 | 10.201.46.0/24 |
+| LON05 | 10.201.62.0/24 |
+| LON06 | 10.201.78.0/24 |
+| MEL01 | 10.2.94.0/24 |
+| MEX01 | 10.2.190.0/24 |
+| MIL01 | 10.3.158.0/24 |
+| MON01 | 10.3.126.0/24 |
+| OSL01 | 10.200.110.0/24 |
+| PAR01 | 10.2.158.0/24 |
+| SAO01 | 10.200.14.0/24 |
+| SEA01 | 10.1.90.0/24<br />10.1.95.0/24 |
+| SEO01 | 10.200.78.0/24 |
+| SJC01 | 10.1.206.0/24<br />10.200.46.0/24 |
+| SJC03 | 10.3.190.0/24 |
+| SJC04 | 10.201.94.0/24 |
+| SNG01 | 10.2.46.0/24<br />10.200.158.0/24 |
+| SYD01 | 10.3.110.0/24 |
+| SYD04 | 10.201.30.0/24 |
+| TOK02 | 10.3.78.0/24 |
+| TOK02AZ | 10.201.174.0/24 |
+| TOK04 | 10.201.190.0/24 |
+| TOK05 | 10.201.206.0/24 |
+| TOR01 | 10.2.62.0/24 |
+| WDC01 | 10.1.122.0/24<br />10.1.127.0/24<br />10.1.104.0/24 |
+| WDC03 | 100.100.46.0/24 |
+| WDC04 | 10.201.14.0/24 |
+| WDC04 | 10.3.174.0/24 |
+| WDC06 | 10.200.174.0/24 |
+| WDC07 | 10.200.90.0/24 |
+{: caption="Table 2. File &amp; Block by Data Center" caption-side="left"}
+{: #simpletabtable2}
+{: tab-title="File & Block"}
+{: tab-group="IAM-simple"}
+{: class="simple-tab-table"}
+
+| Data Center | IP Range |
+|-----|-----|
+| **Required Flows**:<ul><li>Inbound: TCP and UDP, 48000. `*` </li><li>Outbound: TCP and UDP, 48000-48020. `*`</li></ul> | |
+| AMS01 | 10.2.67.0/24 |
+| AMS03 | 10.3.131.0/24 |
+| CHE01 | 10.200.19.0/24 |
+| DAL01 | 10.0.79.0/24 |
+| DAL05 | 10.1.143/139.0/24 |
+| DAL06 | 10.2.131.0/24 |
+| DAL07 | 10.1.179.0/24 |
+| DAL08 | 100.100.3.0/24 |
+| DAL09 | 10.2.115.0/24 |
+| DAL10 | 10.200.83.0/24 |
+| DAL12 | 10.200.115.0/24 |
+| DAL13 | 10.200.131.0/24 |
+| FRA02 | 10.3.83.0/24 |
+| FRA02AZ | 10.201.147.0/24 |
+| FRA04 | 10.201.115.0/24 |
+| FRA05 | 10.201.131.0/24 |
+| HKG02 | 10.2.163.0/24 |
+| HOU02 | 10.1.163.0/24 |
+| LON02 | 10.1.211.0/24 |
+| LON02AZ | 10.201.99.0/24 |
+| LON04 | 10.201.35.0/24 |
+| LON05 | 10.201.51.0/24 |
+| LON06 | 10.201.67.0/24 |
+| MEL01 | 10.2.83.0/24 |
+| MEX01 | 10.2.179.0/24 |
+| MIL01 | 10.3.147.0/24 |
+| MON01 | 10.3.115.0/24 |
+| OSL01 | 10.200.99.0/24 |
+| PAR01 | 10.2.147.0/24 |
+| SAO01 | 10.200.3.0/24 |
+| SEA01 | 10.1.79.0/24 |
+| SEO01 | 10.200.67.0/24 |
+| SJC01 | 10.1.195.0/24 |
+| SJC03 | 10.3.179.0/24 |
+| SJC04 | 10.201.83.0/24 |
+| SNG01 | 10.2.35.0/24 |
+| SYD01 | 10.3.99.0/24 |
+| SYD04 | 10.201.19.0/24 |
+| TOK02 | 10.3.67.0/24 |
+| TOK02AZ | 10.201.163.0/24 |
+| TOK04 | 10.201.179.0/24 |
+| TOK05 | 10.201.195.0/24 |
+| TOR01 | 10.2.51.0/24 |
+| WDC01 | 10.1.111.0/24 |
+| WDC03 | 100.100.35.0/24 |
+| WDC04 | 10.3.163.0/24 |
+| WDC04 | 10.201.3.0/24 |
+| WDC06 | 10.200.163.0/24 |
+| WDC07 | 10.200.179.0/24 |
+{: caption="Table 3. AdvMon (Nimsoft) by Data Center" caption-side="left"}
+{: #simpletabtable3}
+{: tab-title="AdvMon (Nimsoft)"}
+{: tab-group="IAM-simple"}
+{: class="simple-tab-table"}
+
+| Data Center | IP Range |
+|-----|-----|
+| **Required Flows**:Outbound: TCP 80, 443. `*`</li></ul> | |
+| AMS01 | 10.2.66.0/24<br/>10.200.50.0/24 |
+| AMS03 | 10.3.130.0/24 |
+| CHE01 | 10.200.18.0/24 |
+| DAL01 | 10.0.78.0/24 |
+| DAL05 | 10.1.142.0/24<br/>10.1.138.0/24 |
+| DAL06 | 10.2.130.0/24 |
+| DAL07 | 10.1.178.0/24 |
+| DAL08 | 100.100.2.0/24 |
+| DAL09 | 10.2.114.0/24 |
+| DAL10 | 10.200.82.0/24 |
+| DAL12 | 10.200.114.0/24 |
+| DAL13 | 10.200.130.0/24 |
+| FRA02 | 10.3.82.0/24 |
+| FRA02AZ | 10.201.146.0/24 |
+| FRA04 | 10.201.114.0/24 |
+| FRA05 | 10.201.130.0/24 |
+| HKG02 | 10.2.162.0/24 |
+| HOU02 | 10.1.162.0/24 |
+| LON02 | 10.1.210.0/24 |
+| LON02AZ | 10.201.98.0/24 |
+| LON04 | 10.201.34.0/24 |
+| LON05 | 10.201.50.0/24 |
+| LON06 | 10.201.66.0/24 |
+| MEL01 | 10.2.82.0/24 |
+| MEX01 | 10.2.178.0/24 |
+| MIL01 | 10.3.146.0/24 |
+| MON01 | 10.3.114.0/24 |
+| OSL01 | 10.200.98.0/24 |
+| PAR01 | 10.2.146.0/24 |
+| SAO01 | 10.200.2.0/24 |
+| SEA01 | 10.1.78.0/24 |
+| SEO01 | 10.200.66.0/24 |
+| SJC01 | 10.1.194.0/24<br/>10.200.34.0/24 |
+| SJC03 | 10.3.178.0/24 |
+| SJC04 | 10.201.82.0/24 |
+| SNG01 | 10.2.34.0/24<br/>10.200.146.0/24 |
+| SYD01 | 10.3.98.0/24 |
+| SYD04 | 10.201.18.0/24 |
+| TOK02 | 10.3.66.0/24 |
+| TOK02AZ | 10.201.162.0/24 |
+| TOK04 | 10.201.178.0/24 |
+| TOK05 | 10.201.194.0/24 |
+| TOR01 | 10.2.50.0/24 |
+| WDC01 | 10.1.110.0/24<br/>10.1.106.0/24|
+| WDC03 | 100.100.34.0/24 |
+| WDC04 | 10.3.162.0/24 |
+| WDC04 | 10.201.2.0/24 |
+| WDC06 | 10.200.162.0/24 |
+| WDC07 | 10.200.178.0/24 |
+{: caption="Table 4. ICOS by Data Center" caption-side="left"}
+{: #simpletabtable4}
+{: tab-title="ICOS"}
+{: tab-group="IAM-simple"}
+{: class="simple-tab-table"}
+
+`*` - Directionality is from the customer compute perspective. Outbound means leaving your account towards the service. Inbound means service reaching out to compute.
+{: note}
+
 ## SSL VPN network (on backend/private network)
 ICMP – ping (for support troubleshooting)
 All TCP/UDP ports (for access from your local workstation)
 
 ## SSL VPN data centers
 
-|Datacenter|City|State|Country|IP Range|
+|Data Center|City|State|Country|IP Range|
 |---|---|---|---|---|
 |ams01|Amsterdam|-|NLD|10.2.200.0/23|
 |ams03|Amsterdam|-|NLD|10.3.220.0/24|
@@ -315,9 +551,9 @@ All TCP/UDP ports (for access from your local workstation)
 
 ## Red Hat Enterprise Linux server requirements
 
-If your server uses a **Red Hat Enterprise Linux (RHEL)** license provided by {{site.data.keyword.cloud_notm}} Infrastructure, you will additionally need to allow access to the service network as follows, otherwise updates and licensing will not function properly:
+If your server uses a **Red Hat Enterprise Linux (RHEL)** license provided by {{site.data.keyword.cloud_notm}} Infrastructure, you must also allow access to the service network as follows, otherwise updates and licensing do not function properly:
 
-|Server Location|Allow Private Service Network for this datacenter|
+|Server Location|Allow Private Service Network for this data center|
 |---|---|
 |Amsterdam (AMS01, AMS03)|FRA02|
 |Chennai (CHE01)|TOK02|
