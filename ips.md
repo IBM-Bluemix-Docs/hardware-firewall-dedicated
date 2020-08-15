@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018, 2019
-lastupdated: "2019-11-13"
+  years: 2017, 2020
+lastupdated: "2020-08-13"
 
 keywords: ip, range, firewall, network, traffic, security
 
@@ -23,7 +23,7 @@ subcollection: hardware-firewall-dedicated
 # IBM Cloud IP ranges
 {: #ibm-cloud-ip-ranges}
 
-A frequently asked question is, **What IP ranges do I allow through the firewall?** The following list contains the full range of IPs to use with the following IBM firewalls and appliances.
+A frequently asked question is, **What IP ranges do I allow through the firewall?** The following tables contain the full range of IPs to use with these IBM firewalls and appliances.
 {: shortdesc}
 
 * IBM Cloud Juniper vSRX Standard
@@ -86,8 +86,8 @@ A frequently asked question is, **What IP ranges do I allow through the firewall
 |wdc07|Washington D.C.|-|USA|169.61.118.0/23|
 
 Ports to allow:
-All TCP/UDP ports
-ICMP – ping (for support troubleshooting and monitoring)
+- All TCP/UDP ports
+- ICMP – ping (for support troubleshooting and monitoring)
 
 ## Load balancer IPs
 
@@ -165,20 +165,21 @@ ICMP – ping (for support troubleshooting and monitoring)
 |WDC|Washington D.C.|-|USA|50.22.255.0/24|
 
 Ports to allow:
-All TCP/UDP ports
+- All TCP/UDP ports
 
 ## Vulnerability scans
-To ensure successful completion of a Nessus vulnerability scan, permit access for the following IP addresses: **169.48.118.71**, **173.192.255.232**, **172.17.19.38**, and **172.22.211.38**. For scans in federal datacenters, please allow **100.100.1.41** and **100.64.23.41**.
+To ensure successful completion of a Nessus vulnerability scan, permit access for the following IP addresses: **169.48.118.71**, **173.192.255.232**, **172.17.19.38**, and **172.22.211.38**. For scans in federal datacenters, allow **100.100.1.41** and **100.64.23.41**.
 
 ## Backend (private) network
 
 IP block: your private IP block for server to server communications (10.X.X.X/X)
+
 Ports to allow:
-ICMP – ping (for support troubleshooting)
-All TCP/UDP ports
+- ICMP – ping (for support troubleshooting)
+- All TCP/UDP ports
 
 ## Service network (on backend/private network)
-Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the location of your server. If your server is in an EU location, you'll need to add rules allowing traffic from DAL01, DAL10, WDC04, and AMS01 to your server. The traffic must be able to travel between the service networks and your server. By default, all servers and gateway/firewall devices are configured with a static route for the `10.0.0.0/8` network to the Backend Customer Router (BCR). If you change that configuration such that the entire `10.0.0.0/8` network is pointed elsewhere, you must also configure static routes for the service networks to ensure they are pointed to the Backend Customer Router (BCR). Failing to do so will result in the static routes being pointed to whichever IP address you replaced the original with. If you do not change the default static route for `10.0.0.0/8`, then the service networks are already routed correctly.
+Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the location of your server. If your server is in an EU location, you'll need to add rules allowing traffic from DAL01, DAL10, WDC04, and AMS01 to your server. The traffic must be able to travel between the service networks and your server. By default, all servers and gateway/firewall devices are configured with a static route for the `10.0.0.0/8` network to the Backend Customer Router (BCR). If you change that configuration such that the entire `10.0.0.0/8` network is pointed elsewhere, you must also configure static routes for the service networks to ensure they are pointed to the BCR. Failing to do so will result in the static routes being pointed to whichever IP address you replaced the original with. If you do not change the default static route for `10.0.0.0/8`, then the service networks are already routed correctly.
 
 |Data Center|City|State|Country|IP Range|
 |---|---|---|---|---|
@@ -472,6 +473,7 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 
 ## SSL VPN network (on backend/private network)
 ICMP – ping (for support troubleshooting)
+
 All TCP/UDP ports (for access from your local workstation)
 
 ## SSL VPN data centers

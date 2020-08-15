@@ -9,6 +9,11 @@ Hardware Firewall (Dedicated)
     about.md
     /fortigate-10g/fortigate-10g-exploring-firewalls
     [What is network security?](https://www.ibm.com/cloud/learn/networking-a-complete-guide)
+
+    {: .topicgroup}
+    Hardware Firewall Dedicated migration guide
+        eom-announcement.md
+        migration-steps.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
