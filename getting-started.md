@@ -27,7 +27,7 @@ subcollection: hardware-firewall-dedicated
 The Hardware Firewall (Dedicated) provides customers with an essential layer of security that is provisioned on demand without service interruptions. It prevents unwanted traffic from hitting your servers, reducing your attack surface, and allowing your server resources to be dedicated for their intended use.  
 {: shortdesc}
 
-All instances of this service are deprecated. Existing instances can be used until it is no longer supported on 30 May 2021. Use one of the other available [firewall options](/docs/fortigate-10g?topic=fortigate-10g-exploring-firewalls#exploring-firewalls) to get our latest mobile security capabilities on IBM Cloud. For migration information, see [Migrating Hardware Firewall (Dedicated)](/docs/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-migration-overview#migration-overview)
+All instances of this service are deprecated. Existing instances can be used until it is no longer supported on 30 May 2021. Use one of the other available [firewall options](/docs/fortigate-10g?topic=fortigate-10g-exploring-firewalls#exploring-firewalls) to get our latest security capabilities on IBM Cloud. For migration information, see [Migrating Hardware Firewall (Dedicated)](/docs/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-migration-overview#migration-overview).
 {: deprecated}
 
 To order a Hardware Firewall (Dedicated), perform the following procedure:
