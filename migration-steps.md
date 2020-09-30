@@ -4,7 +4,7 @@ copyright:
   years: 2019, 2020
 lastupdated: "2020-08-15"
 
-keywords: migrate, update, gateway, firewall, cloud, hardware, firewall, dedicated, vra, vsrx, migration, migrating
+keywords: migrate, update, gateway, firewall, cloud, migration, migrating
 
 subcollection: hardware-firewall-dedicated
 

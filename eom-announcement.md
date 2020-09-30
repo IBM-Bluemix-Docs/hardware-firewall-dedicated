@@ -4,7 +4,7 @@ copyright:
   years: 2020
 lastupdated: "2020-08-15"
 
-keywords: hardware, firewall, dedicated, migration, migrating, support, marketing
+keywords: migration, migrating, support, marketing
 
 subcollection: hardware-firewall-dedicated
 
