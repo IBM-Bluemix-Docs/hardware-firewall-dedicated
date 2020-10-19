@@ -268,7 +268,7 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 | MEL01 | 10.2.86.0/24 |  
 | MEX01 | 10.2.182.0/24 |   
 | MIL01 | 10.3.150.0/24 |  
-| MON01 | 10.3.118.02/24 |  
+| MON01 | 10.3.118.0/24 |  
 | OSL01 | 10.200.102.0/24 |  
 | PAR01 | 10.2.150.0/24 |  
 | SAO01 | 10.200.6.0/24 |  
