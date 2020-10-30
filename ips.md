@@ -66,8 +66,8 @@ A frequently asked question is, **What IP ranges do I allow through the firewall
 |osa21|Osaka|-|JPN|163.68.118.0/24|
 |osa22|Osaka|-|JPN|163.69.118.0/24|
 |osa23|Osaka|-|JPN|163.73.118.0/24|
-|par01|Paris|-|FRA|159.8.118.0/23|
 |osl01|Oslo|-|NOR|169.51.118.0/24|
+|par01|Paris|-|FRA|159.8.118.0/23|
 |sao01|São Paulo|-|BRA|169.57.138.0/23|
 |sea01|Seattle|Washington|USA|67.228.118.0/23|
 |seo01|Seoul|-|KOR|169.56.118.0/24|
@@ -216,8 +216,8 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 |osa21|Osaka|-|JPN|10.202.112.0/20|
 |osa22|Osaka|-|JPN|10.202.144.0/20|
 |osa23|Osaka|-|JPN|10.202.160.0/20|
-|par01|Paris|-|FRA|10.2.144.0/20|
 |osl01|Oslo|-|NOR|10.200.96.0/20|
+|par01|Paris|-|FRA|10.2.144.0/20|
 |sao01|São Paulo|-|BRA|10.200.0.0/20|
 |sea01|Seattle|Washington|USA|10.1.64.0/19|
 |seo01|Seoul|-|KOR|10.200.64.0/20|
