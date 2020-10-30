@@ -63,6 +63,9 @@ A frequently asked question is, **What IP ranges do I allow through the firewall
 |mex01|Mexico City|-|MEX|169.57.118.0/23|
 |mil01|Milan|-|ITA|159.122.138.0/23|
 |mon01|Montreal|-|CAN|169.54.118.0/23|
+|osa21|Osaka|-|JPN|163.68.118.0/24|
+|osa22|Osaka|-|JPN|163.69.118.0/24|
+|osa23|Osaka|-|JPN|163.73.118.0/24|
 |par01|Paris|-|FRA|159.8.118.0/23|
 |osl01|Oslo|-|NOR|169.51.118.0/24|
 |sao01|São Paulo|-|BRA|169.57.138.0/23|
@@ -210,6 +213,9 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 |mex01|Mexico City|-|MEX|10.2.176.0/20|
 |mil01|Milan|-|ITA|10.3.144.0/20|
 |mon01|Montreal|-|CAN|10.3.112.0/20|
+|osa21|Osaka|-|JPN|10.202.112.0/20|
+|osa22|Osaka|-|JPN|10.202.144.0/20|
+|osa23|Osaka|-|JPN|10.202.160.0/20|
 |par01|Paris|-|FRA|10.2.144.0/20|
 |osl01|Oslo|-|NOR|10.200.96.0/20|
 |sao01|São Paulo|-|BRA|10.200.0.0/20|
