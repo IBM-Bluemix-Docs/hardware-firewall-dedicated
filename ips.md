@@ -306,7 +306,7 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 | **Required Flows**:<ul><li>NFS File Storage:</li><ul><li>TCP & UDP 111 (sunrpc)</li><li>TCP & UDP 2049 (nfs)</li><li>TCP & UDP 111(portmapper)</li><li>TCP & UDP 635 (nfsd)</li><li>TCP & UDP 4045-4048</li><li>UDP 4049</li></ul><li>Block Storage:</li><ul><li>TCP & UDP 65200 (iscsi)</li></ul></ul> | |
 | AMS01 | 10.2.78.0/24<br />10.200.62.0/24 |
 | AMS03 | 10.3.142.0/24 |
-| CHE01 | 10.200.30.10/24 |
+| CHE01 | 10.200.30.0/24 |
 | DAL01 | 10.0.90.0/24<br />10.0.95.0/24 |
 | DAL05 | 10.1.154.0/24<br />10.1.159.0/24 |
 | DAL06 | 10.2.142.0/24 |
