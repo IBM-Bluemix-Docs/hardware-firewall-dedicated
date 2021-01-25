@@ -232,6 +232,8 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 |tok04|Tokyo|-|JPN|10.201.176.0/20|
 |tok05|Tokyo|-|JPN|10.201.192.0/20|
 |tor01|Toronto|-|CAN|10.2.48.0/20|
+|tor04|Toronto|-|CAN|10.202.176.0/20|
+|tor05|Toronto|-|CAN|10.202.192.0/20|
 |wdc01|Washington D.C.|-|USA|10.1.96.0/19|
 |wdc03|Washington D.C.|-|USA|100.100.32.0/20|
 |wdc04|Washington D.C.|-|USA|10.3.160.0/20 and 10.201.0.0/20|
@@ -274,7 +276,10 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 | MEL01 | 10.2.86.0/24 |  
 | MEX01 | 10.2.182.0/24 |   
 | MIL01 | 10.3.150.0/24 |  
-| MON01 | 10.3.118.0/24 |  
+| MON01 | 10.3.118.0/24 |
+| OSA21 | 10.202.118.0/24 |
+| OSA22 | 10.202.150.0/24 |
+| OSA23 | 10.202.166.0/24 |
 | OSL01 | 10.200.102.0/24 |  
 | PAR01 | 10.2.150.0/24 |  
 | SAO01 | 10.200.6.0/24 |  
@@ -330,6 +335,9 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 | MEX01 | 10.2.190.0/24 |
 | MIL01 | 10.3.158.0/24 |
 | MON01 | 10.3.126.0/24 |
+| OSA21 | 10.202.126.0/24 |
+| OSA22 | 10.202.158.0/24 |
+| OSA23 | 10.202.174.0/24 |
 | OSL01 | 10.200.110.0/24 |
 | PAR01 | 10.2.158.0/24 |
 | SAO01 | 10.200.14.0/24 |
@@ -446,6 +454,9 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 | MEX01 | 10.2.178.0/24 |
 | MIL01 | 10.3.146.0/24 |
 | MON01 | 10.3.114.0/24 |
+| OSA21 | 10.202.114.0/24 |
+| OSA22 | 10.202.146.0/24 |
+| OSA23 | 10.202.162.0/24 |
 | OSL01 | 10.200.98.0/24 |
 | PAR01 | 10.2.146.0/24 |
 | SAO01 | 10.200.2.0/24 |
@@ -508,8 +519,11 @@ All TCP/UDP ports (for access from your local workstation)
 |mex01|Mexico City|-|MEX|10.3.232.0/24|
 |mil01|Milan|-|ITA|10.3.216.0/24|
 |mon01|Montreal|-|CAN|10.3.224.0/24|
-|par01|Paris|-|FRA|10.3.236.0/24|
+|osa21|Osaka|10.202.128.0/24|
+|osa22|Osaka|10.202.132.0/24|
+|osa23|Osaka|10.202.136.0/24|
 |osl01|Oslo|-|NOR|10.200.220.0/22|
+|par01|Paris|-|FRA|10.3.236.0/24|
 |sao01|São Paulo|-|BRA|10.200.236.0/24|
 |sea01|Seattle|Washington|USA|10.1.8.0/23|
 |seo01|Seoul|-|KOR|10.200.224.0/22|
