@@ -27,6 +27,7 @@ Hardware Firewall (Dedicated)
 
     {: .navgroup id="reference"}
     ips.md
+    [Terraform](https://cloud.ibm.com/docs/terraform?topic=terraform-getting-started)
     {: .navgroup-end}
 
     {: .navgroup id="help"}
