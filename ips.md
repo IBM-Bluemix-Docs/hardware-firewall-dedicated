@@ -23,18 +23,18 @@ subcollection: hardware-firewall-dedicated
 # IBM Cloud IP ranges
 {: #ibm-cloud-ip-ranges}
 
-A frequently asked question is, **What IP ranges do I allow through the firewall?** The following tables contain the full range of IPs to use with these IBM firewalls and appliances.
+A frequently asked question is, "What IP ranges do I allow through the firewall?" The following tables contain the full range of IPs to use with these IBM firewalls and appliances.
 {: shortdesc}
 
 * IBM Cloud Juniper vSRX Standard
 * IBM Virtual Router Appliance
-* Fortigate Security Appliance 10Gbps
-* Fortigate Security Appliance 1Gbps
+* Fortigate Security Appliance 10 Gbps
+* Fortigate Security Appliance 1 Gbps
 * IBM Security Groups
 * Hardware Firewall (Dedicated)
 * Hardware Firewall (Shared)
 
-## Frontend (public) network
+## Front-end (public) network
 
 |Data Center|City|State|Country|IP Range|
 |---|---|---|---|---|
@@ -82,6 +82,8 @@ A frequently asked question is, **What IP ranges do I allow through the firewall
 |tok04|Tokyo|-|JPN|128.168.118.0/23|
 |tok05|Tokyo|-|JPN|165.192.118.0/23|
 |tor01|Toronto|-|CAN|158.85.118.0/23|
+|tor04|Toronto|-|CAN|163.74.118.0/23|
+|tor05|Toronto|-|CAN|163.75.118.0/23|
 |wdc01|Washington D.C.|-|USA|208.43.118.0/23|
 |wdc03|Washington D.C.|-|USA|192.255.38.0/24|
 |wdc04|Washington D.C.|-|USA|169.55.118.0/23|
@@ -164,25 +166,23 @@ Ports to allow:
 |SNG|Jurong East|-|SGP|174.133.116.0/24|
 |SYD|Sydney|-|AUS|168.1.16.0/24|
 |TOK|Tokyo|-|JPN|161.202.116.0/24|
-|TOR|Toronto|-|CAN|158.85.116.0/24|
+|TOR|Toronto|-|CAN|158.85.116.0/24, 163.66.116.0/24, 163.74.116.0/24, 163.75.116.0/24|
 |WDC|Washington D.C.|-|USA|50.22.255.0/24|
 
 Ports to allow:
 - All TCP/UDP ports
 
-## Vulnerability scans
-To ensure successful completion of a Nessus vulnerability scan, permit access for the following IP addresses: **169.48.118.71**, **173.192.255.232**, **172.17.19.38**, and **172.22.211.38**. For scans in federal datacenters, allow **100.100.1.41** and **100.64.23.41**.
+## Back-end (private) network
 
-## Backend (private) network
-
-IP block: your private IP block for server to server communications (10.X.X.X/X)
+IP block: your private IP block for server to server communications (`10.X.X.X/X`)
 
 Ports to allow:
 - ICMP – ping (for support troubleshooting)
 - All TCP/UDP ports
 
-## Service network (on backend/private network)
-Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the location of your server. If your server is in an EU location, you'll need to add rules allowing traffic from DAL01, DAL10, WDC04, and AMS01 to your server. The traffic must be able to travel between the service networks and your server. By default, all servers and gateway/firewall devices are configured with a static route for the `10.0.0.0/8` network to the Backend Customer Router (BCR). If you change that configuration such that the entire `10.0.0.0/8` network is pointed elsewhere, you must also configure static routes for the service networks to ensure they are pointed to the BCR. Failing to do so will result in the static routes being pointed to whichever IP address you replaced the original with. If you do not change the default static route for `10.0.0.0/8`, then the service networks are already routed correctly.
+## Service network (on back-end/private network)
+
+Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the location of your server. If your server is in an EU location, you must add rules allowing traffic from DAL01, DAL10, WDC04, and AMS01 to your server. The traffic must be able to travel between the service networks and your server. By default, all servers and gateway/firewall devices are configured with a static route for the `10.0.0.0/8` network to the Backend Customer Router (BCR). If you change that configuration such that the entire `10.0.0.0/8` network is pointed elsewhere, you must also configure static routes for the service networks to ensure they are pointed to the BCR. Failing to do so will result in the static routes being pointed to whichever IP address you replaced the original with. If you do not change the default static route for `10.0.0.0/8`, then the service networks are already routed correctly.
 
 |Data Center|City|State|Country|IP Range|
 |---|---|---|---|---|
@@ -240,7 +240,7 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 |wdc06|Washington D.C.|-|USA|10.200.160.0/20|
 |wdc07|Washington D.C.|-|USA|10.200.176.0/20|
 
-`*` - The 10.1.129.0/24 subnet, within the 10.1.128.0/19 master subnet, is used for Global service virtual IPs, which are not located in dal05.
+`*` - The 10.1.129.0/24 subnet, within the 10.1.128.0/19 master subnet, is used for Global service virtual IPs, which are not located in DAL05.
 {: note}
 
 ### Service by data center
@@ -538,6 +538,8 @@ All TCP/UDP ports (for access from your local workstation)
 |tok04|Tokyo|-|JPN|10.201.228.0/24|
 |tok05|Tokyo|-|JPN|10.201.224.0/24|
 |tor01|Toronto|-|CAN|10.1.232.0/24|
+|tor04|Toronto|-|CAN|10.1.0.0/24|
+|tor05|Toronto|-|CAN|10.1.4.0/24|
 |wdc01|Washington D.C.|-|USA|10.1.16.0/23|
 |wdc04|Washington D.C.|-|USA|10.3.212.0/24|
 |wdc03|Washington D.C.|-|USA|100.101.132.0/24|
@@ -573,7 +575,7 @@ All TCP/UDP ports (for access from your local workstation)
 
 ## Red Hat Enterprise Linux server requirements
 
-If your server uses a **Red Hat Enterprise Linux (RHEL)** license provided by {{site.data.keyword.cloud_notm}} Infrastructure, you must also allow access to the service network as follows, otherwise updates and licensing do not function properly:
+If your server uses a Red Hat Enterprise Linux (RHEL) license provided by {{site.data.keyword.cloud_notm}} infrastructure, you must also allow access to the service network as follows; otherwise, updates and licensing do not function properly.
 
 |Server Location|Allow Private Service Network for this data center|
 |---|---|
