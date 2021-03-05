@@ -537,7 +537,7 @@ All TCP/UDP ports (for access from your local workstation)
 |tok02|Tokyo|-|JPN|10.2.224.0/24|
 |tok04|Tokyo|-|JPN|10.201.228.0/24|
 |tok05|Tokyo|-|JPN|10.201.224.0/24|
-|tor01|Toronto|-|CAN|10.1.232.0/24|
+|tor01|Toronto|-|CAN|10.1.232.0/24<br/>10.1.233.0/24|
 |tor04|Toronto|-|CAN|10.1.0.0/24|
 |tor05|Toronto|-|CAN|10.1.4.0/24|
 |wdc01|Washington D.C.|-|USA|10.1.16.0/23|
