@@ -219,6 +219,8 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 |osl01|Oslo|-|NOR|10.200.96.0/20|
 |par01|Paris|-|FRA|10.2.144.0/20|
 |sao01|São Paulo|-|BRA|10.200.0.0/20|
+|sao04|São Paulo|-|BRA|10.202.208.0/20|
+|sao05|São Paulo|-|BRA|10.202.240.0/20|
 |sea01|Seattle|Washington|USA|10.1.64.0/19|
 |seo01|Seoul|-|KOR|10.200.64.0/20|
 |sjc01|San Jose|California|USA|10.1.192.0/20|
