@@ -257,7 +257,6 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 | DAL01 | 10.0.82.0/24 |
 | DAL05 | 10.1.146.0/24 |     
 | DAL06 | 10.2.134.0/24 |   
-| DAL07 | 10.1.182.0/24 |  
 | DAL08 | 100.100.6.0/24 |  
 | DAL09 | 10.2.118.0/24 |
 | DAL09 | 10.2.126.0/24
@@ -274,8 +273,7 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 | LON02AZ | 10.201.102.0/24 |  
 | LON04 | 10.201.38.0/24 |  
 | LON05 | 10.201.54.0/24 |   
-| LON06 | 10.201.70.0/24 |  
-| MEL01 | 10.2.86.0/24 |  
+| LON06 | 10.201.70.0/24 |   
 | MEX01 | 10.2.182.0/24 |   
 | MIL01 | 10.3.150.0/24 |  
 | MON01 | 10.3.118.0/24 |
@@ -285,7 +283,6 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 | OSL01 | 10.200.102.0/24 |  
 | PAR01 | 10.2.150.0/24 |  
 | SAO01 | 10.200.6.0/24 |  
-| SEA01 | 10.1.82.0/24 |  
 | SEO01 | 10.200.86.0/24 |  
 | SJC01 | 10.1.198.0/24<br />10.200.38.0/24 |
 | SJC03 | 10.3.182.0/24 |
@@ -313,11 +310,10 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 | **Required Flows**:<ul><li>NFS File Storage:</li><ul><li>TCP & UDP 111 (sunrpc)</li><li>TCP & UDP 2049 (nfs)</li><li>TCP & UDP 111(portmapper)</li><li>TCP & UDP 635 (nfsd)</li><li>TCP & UDP 4045-4048</li><li>UDP 4049</li></ul><li>Block Storage:</li><ul><li>TCP & UDP 65200 (iscsi)</li></ul></ul> | |
 | AMS01 | 10.2.78.0/24<br />10.200.62.0/24 |
 | AMS03 | 10.3.142.0/24 |
-| CHE01 | 10.200.30.10/24 |
+| CHE01 | 10.200.30.0/24 |
 | DAL01 | 10.0.90.0/24<br />10.0.95.0/24 |
 | DAL05 | 10.1.154.0/24<br />10.1.159.0/24 |
 | DAL06 | 10.2.142.0/24 |
-| DAL07 | 10.1.190.0/24 |
 | DAL08 | 100.100.14.0/24 |
 | DAL10 | 10.200.94.0/24 |
 | DAL12 | 10.200.126.0/24 |
@@ -333,7 +329,6 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 | LON04 | 10.201.46.0/24 |
 | LON05 | 10.201.62.0/24 |
 | LON06 | 10.201.78.0/24 |
-| MEL01 | 10.2.94.0/24 |
 | MEX01 | 10.2.190.0/24 |
 | MIL01 | 10.3.158.0/24 |
 | MON01 | 10.3.126.0/24 |
@@ -343,7 +338,6 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 | OSL01 | 10.200.110.0/24 |
 | PAR01 | 10.2.158.0/24 |
 | SAO01 | 10.200.14.0/24 |
-| SEA01 | 10.1.90.0/24<br />10.1.95.0/24 |
 | SEO01 | 10.200.78.0/24 |
 | SJC01 | 10.1.206.0/24<br />10.200.46.0/24 |
 | SJC03 | 10.3.190.0/24 |
@@ -377,7 +371,6 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 | DAL01 | 10.0.79.0/24 |
 | DAL05 | 10.1.143/139.0/24 |
 | DAL06 | 10.2.131.0/24 |
-| DAL07 | 10.1.179.0/24 |
 | DAL08 | 100.100.3.0/24 |
 | DAL09 | 10.2.115.0/24 |
 | DAL10 | 10.200.83.0/24 |
@@ -394,14 +387,12 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 | LON04 | 10.201.35.0/24 |
 | LON05 | 10.201.51.0/24 |
 | LON06 | 10.201.67.0/24 |
-| MEL01 | 10.2.83.0/24 |
 | MEX01 | 10.2.179.0/24 |
 | MIL01 | 10.3.147.0/24 |
 | MON01 | 10.3.115.0/24 |
 | OSL01 | 10.200.99.0/24 |
 | PAR01 | 10.2.147.0/24 |
 | SAO01 | 10.200.3.0/24 |
-| SEA01 | 10.1.79.0/24 |
 | SEO01 | 10.200.67.0/24 |
 | SJC01 | 10.1.195.0/24 |
 | SJC03 | 10.3.179.0/24 |
@@ -435,7 +426,6 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 | DAL01 | 10.0.78.0/24 |
 | DAL05 | 10.1.142.0/24<br/>10.1.138.0/24 |
 | DAL06 | 10.2.130.0/24 |
-| DAL07 | 10.1.178.0/24 |
 | DAL08 | 100.100.2.0/24 |
 | DAL09 | 10.2.114.0/24 |
 | DAL10 | 10.200.82.0/24 |
@@ -452,7 +442,6 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 | LON04 | 10.201.34.0/24 |
 | LON05 | 10.201.50.0/24 |
 | LON06 | 10.201.66.0/24 |
-| MEL01 | 10.2.82.0/24 |
 | MEX01 | 10.2.178.0/24 |
 | MIL01 | 10.3.146.0/24 |
 | MON01 | 10.3.114.0/24 |
@@ -462,7 +451,6 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 | OSL01 | 10.200.98.0/24 |
 | PAR01 | 10.2.146.0/24 |
 | SAO01 | 10.200.2.0/24 |
-| SEA01 | 10.1.78.0/24 |
 | SEO01 | 10.200.66.0/24 |
 | SJC01 | 10.1.194.0/24<br/>10.200.34.0/24 |
 | SJC03 | 10.3.178.0/24 |
@@ -583,12 +571,11 @@ If your server uses a Red Hat Enterprise Linux (RHEL) license provided by {{site
 |---|---|
 |Amsterdam (AMS01, AMS03)|FRA02|
 |Chennai (CHE01)|TOK02|
-|Dallas (DAL01, DAL05, DAL06, DAL07, DAL09, DAL10, DAL12, DAL13)|DAL09|
+|Dallas (DAL01, DAL05, DAL06, DAL09, DAL10, DAL12, DAL13)|DAL09|
 |Houston (HOU02)|DAL09|
 |Frankfurt (FRA02, FRA04, FRA05)|FRA02|
 |Hong Kong (HKG02)|TOK02|
 |London (LON02, LON04, LON05, LON06)|LON02|
-|Melbourne (MEL01)|SYD01|
 |Mexico (MEX01)|DAL09|
 |Milan (MIL01)|FRA02|
 |Montreal (MON01)|MON01|
@@ -598,7 +585,6 @@ If your server uses a Red Hat Enterprise Linux (RHEL) license provided by {{site
 |Sao Paulo (SAO01)|DAL09|
 |Seoul (SEO01)|TOK02|
 |Singapore (SNG01)|SYD01|
-|Seattle (SEA01)|DAL09|
 |Sydney (SYD01, SYD04, SYD05)|SYD01|
 |Tokyo (TOK02, TOK04, TOK05)|TOK02|
 |Toronto (TOR01)|MON01|
