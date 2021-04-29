@@ -33,7 +33,7 @@ In a typical migration scenario, you have an existing Hardware Firewall (Dedicat
 ## Migrating from a Hardware Firewall (Dedicated) to Juniper vSRX
 {: #fsa-to-vsrx}
 
-This migration option makes use of the Juniper support program to assist you with migrating to a Juniper vSRX. You can submit the request with your configuration using the following [Google form ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://forms.gle/DvkPBdxC6DiXrHAn6){: new_window}.
+This migration option makes use of the Juniper support program to assist you with configuration conversion for Juniper vSRX. You can submit the request with your configuration using the following [Google form ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://forms.office.com/r/7JdGRPdVw5){: new_window}.
 {: note}
 
 To migrate from an Hardware Firewall (Dedicated) to a vSRX, follow these steps:
