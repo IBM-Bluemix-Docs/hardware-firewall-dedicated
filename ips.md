@@ -230,6 +230,7 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 |syd01|Sydney|-|AUS|10.3.96.0/20 and 10.202.32.0/20|
 |syd04|Sydney|-|AUS|10.201.16.0/20|
 |syd05|Sydney|-|AUS|10.202.16.0/20|
+|tok02|Tokyo|-|JPN|10.201.160.0/20|
 |tok02|Tokyo|-|JPN|10.3.64.0/20|
 |tok04|Tokyo|-|JPN|10.201.176.0/20|
 |tok05|Tokyo|-|JPN|10.201.192.0/20|
